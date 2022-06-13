@@ -14,6 +14,8 @@ body{
     max-width: 1000px;
     height: 600px;
     border-radius: 15px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+
 }
 header{                    /*Encabezado del pokedex*/
     max-width: 1000px;
