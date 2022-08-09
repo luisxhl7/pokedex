@@ -1,0 +1,167 @@
+*{
+    margin: 0px;
+}
+body{
+    background-image: url(../img/fondoPokeballs.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+}
+.cont-pokedex{
+    margin: auto;
+    max-width: 1000px;
+    height: 600px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+}
+header{
+    min-width: 360px;
+    height: 50px;
+    background-color: red;
+    display: flex;
+    border-radius: 15px 15px 0px 0px;
+}
+main{
+    min-width: 360px;
+    padding: 25px 0px;
+    background: linear-gradient( to right, #bbbbbb,#9d9d9d); 
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+footer{
+    min-width: 360px;
+    padding: 11px 0px;
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    border-radius: 0px 0px 15px 15px;
+}
+.icono{                    /*Icono del encabezado*/
+    max-width: 30px;
+    height: 30px;
+    margin: 8px 5px 0px 15px;
+}
+.cont-img{
+    width: 400px;
+    height: 400px;
+    z-index: 100;
+    border-radius: 40px;
+    animation-name: efecto;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.name-poke{                /*Contenedor del nombre del pokemon*/
+    height: 30px;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
+}
+.icono2{                   /*Icono de simbolo elemental del pokemon*/
+    width: 30px;
+    height: 30px;
+}
+.img-poke{                 /*Contenedor de la imagen del pokemon*/
+    max-width: 400px;
+    height: 360px; 
+}
+@keyframes efecto {        /*Diseño de la animacion*/
+    0%  {background-color: red;}
+    20% {background-color: green;}
+    40% {background-color: yellow;}
+    60% {background-color: orange;}
+    80% {background-color: blue;}
+    100%{background-color: violet;}
+}
+.img{                      /*Imagen del pokemon*/
+    max-width: 100%;
+    height: auto;
+}
+.cont-info{
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+.txt-bd{                   /*Diseño de los campos de texto de las estadisticas*/
+    border: transparent;
+    background-color: transparent;
+    color: black;
+    width: 80px;
+    height: 40px;
+    font-size: 20px;
+    display: block;
+    margin: 0px auto 30px;
+    text-align: center;
+}
+label{
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.cont-info>div{
+    width: 50%;
+    padding: 83px 0px;
+}
+.cont-text{
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.cont-btn{
+    width: 600px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+.cont-btn>button{          /*Diseño de los botones*/
+    width: 120px;
+    height: 80px;
+    margin: 10px 0xp;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 5px 5px 2px rgb(78, 78, 78);
+}
+.cont-btn>button:hover{   /*Diseño de la reaccion al dar click en los botones*/
+    width: 125px;
+    height: 85px;
+}
+.cont-btn>button:active{   /*Diseño de la reaccion al dar click en los botones*/
+    background-color: rgb(255, 196, 0);
+    border-color: black;
+    box-shadow: 5px 5px 2px rgb(255, 60, 0);
+}
+.img-btn{                  /*Ajuste de tamaño de las imagenes en los botones*/
+    max-width: 80px;
+    height: 70px;
+}
+@media screen and (max-width:799px){
+    .cont-img{
+        margin-bottom: -80px;
+        animation: none;
+    }
+    .cont-info{
+        animation-name: efecto;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+}
