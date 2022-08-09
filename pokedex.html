@@ -17,11 +17,11 @@
         <main>
             <div class="cont-img">
                 <div class="name-poke">
-                    <i><img src="./img/fuego.png" alt="" class="icono2"></i> 
-                    <h1>CHARIZARD</h1>
+                    <i><img src="./img/fuego.png" alt="" class="icono2" id="elemento"></i>
+                    <input type="text" name="" id="txtNombre" class="txt-nombre" value="CHARIZARD" readonly="true">
                 </div>
                 <div class="img-poke">
-                    <img src="./img/charizard.png" class ="img" title="CHARIZARD">
+                    <img src="./img/charizard.png" class ="img" id="img" title="CHARIZARD">
                 </div>
             </div>
             <div class="cont-info">
@@ -48,12 +48,13 @@
                 <h1>OTHERS</h1>
             </div>
             <div class="cont-btn">
-                <button><img src="./img/Squirte.png" alt="" class="img-btn" title="Squirte"></button>
-                <button><img src="./img/newtwo.webp" alt="" class="img-btn" title="Newtwo"></button>
-                <button><img src="./img/Solgaleo.webp" alt="" class="img-btn" title="Solgaleo"></button>
-                <button><img src="./img/snorlax.webp" alt="" class="img-btn" title="Snorlax"></button>
+                <button onclick="mostrarPokemon(1)"><img src="./img/Squirte.png" alt="" class="img-btn" title="Squirte" id="squirte"></button>
+                <button onclick="mostrarPokemon(2)"><img src="./img/newtwo.webp" alt="" class="img-btn" title="Newtwo"></button>
+                <button onclick="mostrarPokemon(3)"><img src="./img/Solgaleo.webp" alt="" class="img-btn" title="Solgaleo"></button>
+                <button onclick="mostrarPokemon(4)"><img src="./img/snorlax.webp" alt="" class="img-btn" title="Snorlax"></button>
             </div>
         </footer>    
     </div>
+    <script src="./js/pokedex.js"></script>
 </body>
 </html>
